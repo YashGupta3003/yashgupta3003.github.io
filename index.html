@@ -7,86 +7,200 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+    </button>
+
     <header>
         <div class="container">
             <div class="hero">
-                <h1>Yash Gupta</h1>
-                <p>Computer Science & Mathematics • BITS Pilani • Graduating 2026</p>
+                <div class="name-container">
+                    <h1 class="animated-name">
+                        <span class="letter">Y</span>
+                        <span class="letter">a</span>
+                        <span class="letter">s</span>
+                        <span class="letter">h</span>
+                        <span class="space"></span>
+                        <span class="letter">G</span>
+                        <span class="letter">u</span>
+                        <span class="letter">p</span>
+                        <span class="letter">t</span>
+                        <span class="letter">a</span>
+                    </h1>
+                    <div class="name-underline"></div>
+                </div>
+                <p class="tagline">Computer Science & Mathematics • BITS Pilani • Graduating 2026</p>
                 
                 <!-- Professional Summary -->
-                <div style="max-width: 700px; margin: 2rem auto; padding: 2rem; background: rgba(255,255,255,0.8); border-radius: 16px; backdrop-filter: blur(10px); border: 1px solid rgba(37, 99, 235, 0.1);">
-                    <p style="font-size: 1.1rem; color: var(--secondary); line-height: 1.6; margin: 0;">
-                        <strong style="color: var(--blue-dark);">Dual-degree student</strong> passionate about the intersection of <strong style="color: var(--blue-dark);">AI, quantitative finance, and scalable systems</strong>. 
+                <div class="summary-card">
+                    <p>
+                        <strong>Dual-degree student</strong> passionate about the intersection of <strong>AI, quantitative finance, and scalable systems</strong>. 
                         From building predictive models for government meteorological research to developing LLM-powered workflows for enterprise integrations. 
-                        <strong style="color: var(--blue-dark);">Top performer</strong> in national quant challenges with hands-on experience in backend development and machine learning.
+                        <strong>Top performer</strong> in national quant challenges with hands-on experience in backend development and machine learning.
                     </p>
                 </div>
                 
                 <div class="contact-links">
-                    <a href="mailto:gupta.yash3003@gmail.com">Email</a>
-                    <a href="https://www.linkedin.com/in/yash-gupta-7b0684224/" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/YashGupta3003" target="_blank">GitHub</a>
-                    <a href="https://drive.google.com/file/d/1Z-w-MFsP48jWCgDwCrxK8Olmt2jVWewQ/view?usp=sharing" target="_blank">Resume</a>
-                    <a href="tel:8888002200">Call</a>
+                    <a href="mailto:gupta.yash3003@gmail.com">✉️ Email</a>
+                    <a href="https://www.linkedin.com/in/yash-gupta-7b0684224/" target="_blank">💼 LinkedIn</a>
+                    <a href="https://github.com/YashGupta3003" target="_blank">💻 GitHub</a>
+                    <a href="https://drive.google.com/file/d/1Z-w-MFsP48jWCgDwCrxK8Olmt2jVWewQ/view?usp=sharing" target="_blank">📄 Resume</a>
+                    <a href="tel:8888002200">📞 Call</a>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
+        <div class="main-container">
+            <!-- Left Column -->
+            <div class="left-column">
+                <section class="section">
+                    <h2 class="section-title">
+                        <span class="title-icon">🎓</span>
+                        Education
+                    </h2>
+                    <div class="education-item">
+                        <h3>BITS Pilani</h3>
+                        <div class="education-meta">B.E. in Computer Science and M.Sc in Mathematics • Aug 2021 - Jun 2026</div>
+                        <div class="coursework">
+                            <strong>Relevant Coursework:</strong> Object-Oriented Programming, Machine Learning, Data Structures and Algorithms, Database Management Systems, Operating Systems, Optimization, Linear Algebra, Neural Networks, Generative AI
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">
+                        <span class="title-icon">🛠️</span>
+                        Technical Skills
+                    </h2>
+                    <div class="skills-compact">
+                        <div class="skill-category">
+                            <h3>Programming Languages</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">C/C++</span>
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">Java</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Frameworks & Libraries</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">PyTorch</span>
+                                <span class="skill-tag">Scikit-learn</span>
+                                <span class="skill-tag">TensorFlow</span>
+                                <span class="skill-tag">Keras</span>
+                                <span class="skill-tag">NumPy</span>
+                                <span class="skill-tag">Pandas</span>
+                                <span class="skill-tag">Flask</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Developer Tools</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">MongoDB</span>
+                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">Android SDK</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">
+                        <span class="title-icon">🏆</span>
+                        Recognitions
+                    </h2>
+                    <div class="recognition-compact">
+                        <div class="recognition-item">
+                            <strong>Goldman Sachs Quantitative Aptitude Hackathon</strong>
+                            <span class="rank">College Rank 3, All India Rank 49</span>
+                        </div>
+                        <div class="recognition-item">
+                            <strong>Nomura Global Markets Quant Challenge</strong>
+                            <span class="rank">College Rank 1, All India Rank 11</span>
+                        </div>
+                        <div class="recognition-item">
+                            <strong>Walmart SparkPlug 2024-2025</strong>
+                            <span class="rank">Finalist</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                <section class="section">
+                    <h2 class="section-title">
+                        <span class="title-icon">💼</span>
+                        Experience
+                    </h2>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <div class="experience-title">Backend Developer and Generative AI Intern</div>
+                                <div class="company">Stealth Startup</div>
+                            </div>
+                            <div class="experience-meta">
+                                Nov 2024 – Present<br>
+                                Remote
+                            </div>
+                        </div>
+                        <ul class="experience-points">
+                            <li>As part of a 3-member core engineering team, I built a production-ready <strong>MVP</strong> that automates workflows across various platforms — now being prepared for <strong>VC funding</strong>.</li>
+                            <li style="font-style: italic; color: var(--blue);">Stealth startups are meant to be quiet about their operations. <a href="https://drive.google.com/file/d/1Z-w-MFsP48jWCgDwCrxK8Olmt2jVWewQ/view?usp=sharing" target="_blank" style="color: var(--blue); text-decoration: underline;">View my resume</a> for more details.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <div class="experience-title">Machine Learning Summer Intern</div>
+                                <div class="company">Indian Meteorological Department, Govt. of India</div>
+                            </div>
+                            <div class="experience-meta">
+                                May 2023 – Jul 2023<br>
+                                Pune, MH
+                            </div>
+                        </div>
+                        <ul class="experience-points">
+                            <li>Created MLP and LSTM models for predicting next-day rainfall, based on user input for the current day</li>
+                            <li>Enhanced model accuracy by 34% over previous models through optimized data inputs and architecture</li>
+                            <li>Co-authored a paper on Deep Learning methodologies and their advantages in rainfall forecasting</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <div class="experience-title">Operations and Training Coordinator</div>
+                                <div class="company">Placement Unit</div>
+                            </div>
+                        </div>
+                        <ul class="experience-points">
+                            <li>Managed end-to-end placement process for 2000+ students for AY 2023-24</li>
+                            <li>Devised training strategies based on sector preferences and metrics</li>
+                            <li>Ideated and developed a learning platform with sector-specific knowledge programs for industry-ready outcomes</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Projects Section - Full Width -->
         <div class="container">
-            <section class="section">
-                <h2 class="section-title">Education</h2>
-                <div class="education-item">
-                    <h3>BITS Pilani</h3>
-                    <div class="education-meta">B.E. in Computer Science and M.Sc in Mathematics • Aug 2021 - Jun 2026</div>
-                    <div class="coursework">
-                        <strong>Relevant Coursework:</strong> Object-Oriented Programming, Machine Learning, Data Structures and Algorithms, Database Management Systems, Operating Systems, Optimization, Linear Algebra, Neural Networks, Generative AI
-                    </div>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2 class="section-title">Experience</h2>
-                
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div>
-                            <div class="experience-title">Backend Developer and Generative AI Intern</div>
-                            <div class="company">Stealth Startup</div>
-                        </div>
-                        <div class="experience-meta">
-                            Nov 2024 – Present<br>
-                            Remote
-                        </div>
-                    </div>
-                    <ul class="experience-points">
-                        <li>As part of a 3-member core engineering team, I built a production-ready <strong>MVP</strong> that automates workflows across various platforms — now being prepared for <strong>VC funding</strong>.</li>
-                        <li style="font-style: italic; color: var(--blue);">Stealth startups are meant to be quiet about their operations. <a href="https://drive.google.com/file/d/1Z-w-MFsP48jWCgDwCrxK8Olmt2jVWewQ/view?usp=sharing" target="_blank" style="color: var(--blue); text-decoration: underline;">View my resume</a> for more details.</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div>
-                            <div class="experience-title">Machine Learning Summer Intern</div>
-                            <div class="company">Indian Meteorological Department, Govt. of India</div>
-                        </div>
-                        <div class="experience-meta">
-                            May 2023 – Jul 2023<br>
-                            Pune, MH
-                        </div>
-                    </div>
-                    <ul class="experience-points">
-                        <li>Created MLP and LSTM models for predicting next-day rainfall, based on user input for the current day</li>
-                        <li>Enhanced model accuracy by 34% over previous models through optimized data inputs and architecture</li>
-                        <li>Co-authored a paper on Deep Learning methodologies and their advantages in rainfall forecasting</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2 class="section-title">Projects</h2>
+            <section class="section projects-section">
+                <h2 class="section-title">
+                    <span class="title-icon">🚀</span>
+                    Projects
+                </h2>
                 <div class="projects-grid">
                     <div class="project-card">
                         <div class="project-title">BITSBIDS</div>
@@ -123,58 +237,51 @@
                     </div>
                 </div>
             </section>
-
-            <section class="section">
-                <h2 class="section-title">Technical Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Programming Languages</h3>
-                        <div class="skill-list">Python • C/C++ • SQL • Java</div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Frameworks & Libraries</h3>
-                        <div class="skill-list">PyTorch • Scikit-learn • TensorFlow • Keras<br>NumPy • Pandas • Geopandas • Flask</div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Developer Tools</h3>
-                        <div class="skill-list">Git • Docker • MongoDB • Google Colab<br>Appium • AWS • MySQL • Android SDK</div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2 class="section-title">Recognitions</h2>
-                <div class="recognition-item">
-                    <strong>Goldman Sachs Quantitative Aptitude Hackathon</strong><br>
-                    College Rank 3 and All India Rank 49
-                </div>
-                <div class="recognition-item">
-                    <strong>Nomura Global Markets Quant Challenge</strong><br>
-                    College Rank 1 and All India Rank 11
-                </div>
-                <div class="recognition-item">
-                    <strong>Walmart SparkPlug 2024-2025</strong><br>
-                    Finalist
-                </div>
-            </section>
-
-            <section class="section">
-                <h2 class="section-title">Leadership</h2>
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div>
-                            <div class="experience-title">Operations and Training Coordinator</div>
-                            <div class="company">Placement Unit</div>
-                        </div>
-                    </div>
-                    <ul class="experience-points">
-                        <li>Managed end-to-end placement process for 2000+ students for AY 2023-24</li>
-                        <li>Devised training strategies based on sector preferences and metrics</li>
-                        <li>Ideated and developed a learning platform with sector-specific knowledge programs for industry-ready outcomes</li>
-                    </ul>
-                </div>
-            </section>
         </div>
     </main>
+
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+
+        // Check for saved theme preference or default to 'light'
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        body.setAttribute('data-theme', currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const theme = body.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+            body.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+        });
+
+        // Animated name letters
+        const letters = document.querySelectorAll('.letter');
+        letters.forEach((letter, index) => {
+            letter.style.animationDelay = `${index * 0.1}s`;
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+    </script>
 </body>
 </html>
