@@ -1,19 +1,14 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const toggleBtn = document.getElementById('theme-toggle');
-  const currentTheme = localStorage.getItem('theme');
+function toggleTheme() {
+  const body = document.body;
+  body.classList.toggle("dark-theme");
 
-  if (currentTheme === 'dark') {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    toggleBtn.innerHTML = '<i data-feather="sun"></i>';
+  const currentTheme = body.classList.contains("dark-theme") ? "dark" : "light";
+  localStorage.setItem("theme", currentTheme);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark-theme");
   }
-
-  feather.replace();
-
-  toggleBtn.addEventListener('click', () => {
-    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-    document.documentElement.setAttribute('data-theme', isDark ? 'light' : 'dark');
-    localStorage.setItem('theme', isDark ? 'light' : 'dark');
-    toggleBtn.innerHTML = `<i data-feather="${isDark ? 'moon' : 'sun'}"></i>`;
-    feather.replace();
-  });
 });
