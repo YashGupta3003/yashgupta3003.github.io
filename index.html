@@ -1,89 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yash Gupta | Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://unpkg.com/feather-icons"></script>
-  <script defer src="toggle-theme.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Gupta</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Yash Gupta</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-      <button id="theme-toggle"><i data-feather="moon"></i></button>
-    </nav>
-  </header>
+    <header>
+        <div class="container">
+            <div class="hero">
+                <h1>Yash Gupta</h1>
+                <p>Computer Science & Mathematics • BITS Pilani • Graduating 2026</p>
+                
+                <!-- Professional Summary -->
+                <div style="max-width: 700px; margin: 2rem auto; padding: 2rem; background: rgba(255,255,255,0.8); border-radius: 16px; backdrop-filter: blur(10px); border: 1px solid rgba(37, 99, 235, 0.1);">
+                    <p style="font-size: 1.1rem; color: var(--secondary); line-height: 1.6; margin: 0;">
+                        <strong style="color: var(--blue-dark);">Dual-degree student</strong> passionate about the intersection of <strong style="color: var(--blue-dark);">AI, quantitative finance, and scalable systems</strong>. 
+                        From building predictive models for government meteorological research to developing LLM-powered workflows for enterprise integrations. 
+                        <strong style="color: var(--blue-dark);">Top performer</strong> in national quant challenges with hands-on experience in full-stack development and machine learning.
+                    </p>
+                </div>
+                
+                <div class="contact-links">
+                    <a href="mailto:gupta.yash3003@gmail.com">Email</a>
+                    <a href="https://www.linkedin.com/in/yash-gupta-7b0684224/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/YashGupta3003" target="_blank">GitHub</a>
+                    <a href="https://drive.google.com/file/d/1Z-w-MFsP48jWCrxK8Olmt2jVWewQ/view?usp=sharing" target="_blank">Resume</a>
+                    <a href="tel:8888002200">Call</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hi! I’m Yash Gupta, a Computer Science and Mathematics student at BITS Pilani, graduating in 2026. I thrive at the intersection of technology, finance, and innovation, with hands-on experience in machine learning, algorithmic trading, and full-stack development.</p>
-      <p>From building predictive models and optimizing trading strategies to developing scalable web applications, I love solving complex problems through data-driven insights and efficient software solutions.</p>
-      <p>Currently seeking opportunities in Software Development, Machine Learning, and Quantitative Finance—if you’re looking for a motivated problem-solver, let’s connect! 🚀</p>
-    </section>
+    <main>
+        <div class="container">
+            <section class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="education-item">
+                    <h3>BITS Pilani</h3>
+                    <div class="education-meta">B.E. in Computer Science and M.Sc in Mathematics • Aug 2021 - Jun 2026</div>
+                    <div class="coursework">
+                        <strong>Relevant Coursework:</strong> Object-Oriented Programming, Machine Learning, Data Structures and Algorithms, Database Management Systems, Operating Systems, Optimization, Linear Algebra, Neural Networks, Generative AI
+                    </div>
+                </div>
+            </section>
 
-    <section id="experience">
-      <h2>Experience</h2>
-      <ul>
-        <li><strong>Stealth Startup</strong> – Backend Developer and Generative AI Intern (Nov 2024 – Present)<br />
-          • FastAPI services, prompt engineering, Jira/Asana API workflows.
-        </li>
-        <li><strong>Indian Meteorological Department</strong> – Machine Learning Intern (May 2023 – Jul 2023)<br />
-          • Developed MLP & LSTM models for rainfall prediction, co-authored a research paper.
-        </li>
-      </ul>
-    </section>
+            <section class="section">
+                <h2 class="section-title">Experience</h2>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Backend Developer and Generative AI Intern</div>
+                            <div class="company">Stealth Startup</div>
+                        </div>
+                        <div class="experience-meta">
+                            Nov 2024 – Present<br>
+                            Remote
+                        </div>
+                    </div>
+                    <ul class="experience-points">
+                        <li>Developed backend services using FastAPI to enable integration between Jira and Asana with chatbot workflow</li>
+                        <li>Worked on prompt optimization for LLM-powered features and optimized OpenAI API calls to ensure smooth operation of chatbot</li>
+                        <li>Designed RESTful APIs for login in Asana and Jira and reflection of ticket creation/updation on the workboards</li>
+                        <li style="font-style: italic; color: var(--blue);">Note: Stealth startups are meant to be quiet about their operations. <a href="https://drive.google.com/file/d/1Z-w-MFsP48jWCrxK8Olmt2jVWewQ/view?usp=sharing" target="_blank" style="color: var(--blue); text-decoration: underline;">View my resume</a> for more details.</li>
+                    </ul>
+                </div>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong><a href="https://github.com/YashGupta3003/Stock-analysis-Llama" target="_blank">Stock Price Prediction Model</a></strong><br />
-          SARIMAX + Llama3-based model to forecast prices using sentiment analysis. Streamlit dashboard.
-        </li>
-        <li><strong>Real-Time OCR & Translation System</strong><br />
-          Python + Flask system using EasyOCR and gTTS for multilingual TTS output.
-        </li>
-        <li><strong>BITSBIDS</strong><br />
-          Full-stack bidding platform with AWS, MySQL, Docker, SpringBoot.
-        </li>
-        <li><strong>Ride Booking Automation</strong><br />
-          Appium + Python to automate ride booking from Rapido/Ola.
-        </li>
-      </ul>
-    </section>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Machine Learning Summer Intern</div>
+                            <div class="company">Indian Meteorological Department, Govt. of India</div>
+                        </div>
+                        <div class="experience-meta">
+                            May 2023 – Jul 2023<br>
+                            Pune, MH
+                        </div>
+                    </div>
+                    <ul class="experience-points">
+                        <li>Created MLP and LSTM models for predicting next-day rainfall, based on user input for the current day</li>
+                        <li>Enhanced model accuracy by 34% over previous models through optimized data inputs and architecture</li>
+                        <li>Co-authored a paper on Deep Learning methodologies and their advantages in rainfall forecasting</li>
+                    </ul>
+                </div>
+            </section>
 
-    <section id="skills">
-      <h2>Technical Skills</h2>
-      <p><strong>Languages:</strong> Python, C/C++, SQL, Java<br />
-      <strong>Frameworks:</strong> Flask, TensorFlow, Keras, FastAPI, SpringBoot, Docker<br />
-      <strong>Tools:</strong> AWS, MongoDB, MySQL, Appium</p>
-    </section>
+            <section class="section">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-title">BITSBIDS</div>
+                        <div class="project-tech">SpringBoot • MySQL • AWS • Docker</div>
+                        <div class="project-description">
+                            Built a comprehensive web application enabling selling and bidding functionality, achieving 46 active users on the first day. Optimized deployment on AWS, SpringBoot, and Docker, significantly increasing scope of scalability for future growth.
+                        </div>
+                    </div>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:gupta.yash3003@gmail.com">gupta.yash3003@gmail.com</a></p>
-      <p>
-        <a href="https://www.linkedin.com/in/yash-gupta-7b0684224/">LinkedIn</a> |
-        <a href="https://github.com/YashGupta3003">GitHub</a> |
-        <a href="https://1-yashgupta3003-yashgupta3003s-projects.vercel.app/">Portfolio</a> |
-        <a href="https://docs.google.com/document/d/1eBc2uUERFmi_SGUiLmp46C5Db7NFO37e0e7V_Xn9EW4/edit?usp=sharing">Resume</a>
-      </p>
-    </section>
-  </main>
+                    <div class="project-card">
+                        <div class="project-title">Ride Booking Automation</div>
+                        <div class="project-tech">Python • Appium • Android SDK</div>
+                        <div class="project-description">
+                            Automated ride booking on Android devices by comparing prices from Rapido and Ola platforms. Integrated automated destination selection based on a predefined schedule of the user for seamless experience.
+                        </div>
+                    </div>
 
-  <footer>
-    <p>© 2025 Yash Gupta. Built with ❤️</p>
-  </footer>
+                    <div class="project-card">
+                        <div class="project-title">
+                            <a href="https://github.com/YashGupta3003/Stock-analysis-Llama" target="_blank">Stock Price Prediction Model</a>
+                        </div>
+                        <div class="project-tech">Python • Machine Learning • Llama3 • Streamlit</div>
+                        <div class="project-description">
+                            Developed a SARIMAX-based stock price prediction model with +20% prediction accuracy by incorporating sentiment analysis from news data using LLM-Llama3. Created a Streamlit dashboard to visualize sentiment trends and forecast stock price changes for the next 3 days.
+                        </div>
+                    </div>
 
-  <script>
-    feather.replace();
-  </script>
+                    <div class="project-card">
+                        <div class="project-title">Real-Time OCR and Translation System</div>
+                        <div class="project-tech">Python • Flask • EasyOCR • OpenCV • Google Translate API</div>
+                        <div class="project-description">
+                            Developed a real-time OCR system for text detection and used Google Translate API for multilingual support. Implemented Flask-based web interface with live video feed and bounding box overlay for detected text. Integrated text-to-speech (gTTS) for audio output of translated text and image saving with audio.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-list">Python • C/C++ • SQL • Java</div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frameworks & Libraries</h3>
+                        <div class="skill-list">PyTorch • Scikit-learn • TensorFlow • Keras<br>NumPy • Pandas • Geopandas • Flask</div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Developer Tools</h3>
+                        <div class="skill-list">Git • Docker • MongoDB • Google Colab<br>Appium • AWS • MySQL • Android SDK</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Recognitions</h2>
+                <div class="recognition-item">
+                    <strong>Goldman Sachs Quantitative Aptitude Hackathon</strong><br>
+                    College Rank 3 and All India Rank 49
+                </div>
+                <div class="recognition-item">
+                    <strong>Nomura Global Markets Quant Challenge</strong><br>
+                    College Rank 1 and All India Rank 11
+                </div>
+                <div class="recognition-item">
+                    <strong>Walmart SparkPlug 2024-2025</strong><br>
+                    Finalist
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Leadership</h2>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Operations and Training Coordinator</div>
+                            <div class="company">Placement Unit</div>
+                        </div>
+                    </div>
+                    <ul class="experience-points">
+                        <li>Managed end-to-end placement process for 2000+ students for AY 2023-24</li>
+                        <li>Devised training strategies based on sector preferences and metrics</li>
+                        <li>Ideated and developed a learning platform with sector-specific knowledge programs for industry-ready outcomes</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
