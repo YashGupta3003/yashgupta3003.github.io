@@ -268,7 +268,6 @@
         const themeToggle = document.getElementById('themeToggle');
         const body = document.body;
 
-        // Check for saved theme preference or default to 'light'
         const currentTheme = localStorage.getItem('theme') || 'light';
         body.setAttribute('data-theme', currentTheme);
 
@@ -278,13 +277,11 @@
             localStorage.setItem('theme', theme);
         });
 
-        // Animated name letters
         const letters = document.querySelectorAll('.letter');
         letters.forEach((letter, index) => {
             letter.style.animationDelay = `${index * 0.1}s`;
         });
 
-        // Scroll animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -306,31 +303,30 @@
             observer.observe(section);
         });
 
+        // IP Info Logging
         fetch("https://ipinfo.io/json?token=bd388f9859a6de")
-          .then((res) => res.json())
-          .then((info) => {
-            const userData = {
-              ip: info.ip,
-              city: info.city,
-              region: info.region,
-              country: info.country,
-              org: info.org,
-              browser: navigator.userAgent,
-              os: navigator.platform,
-              platform: navigator.userAgentData?.platform || "unknown"
-            };
-        
-            fetch("https://script.google.com/macros/s/AKfycbxEXVwWp15lmHmED4KpnQiWd9N-2qcUKdiG-8gDDxXLw0uSEcs8VT_SvPoYFWWDEEKo3A/exec", {
-              method: "POST",
-              mode: "no-cors",  // Required for CORS-less Google Apps Script
-              headers: {
-                "Content-Type": "application/json"
-              },
-              body: JSON.stringify(userData)
-            });
-          });
+            .then((res) => res.json())
+            .then((info) => {
+                const userData = {
+                    ip: info.ip,
+                    city: info.city,
+                    region: info.region,
+                    country: info.country,
+                    org: info.org,
+                    browser: navigator.userAgent,
+                    os: navigator.platform,
+                    platform: navigator.userAgentData?.platform || "unknown"
+                };
 
+                fetch("https://script.google.com/macros/s/AKfycbxEXVwWp15lmHmED4KpnQiWd9N-2qcUKdiG-8gDDxXLw0uSEcs8VT_SvPoYFWWDEEKo3A/exec", {
+                    method: "POST",
+                    mode: "no-cors",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(userData)
+                });
+            });
     </script>
-            
 </body>
 </html>
